@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1102386843181783468}
   - component: {fileID: 4977781641197786462}
   - component: {fileID: 3683736444761976050}
-  m_Layer: 0
+  - component: {fileID: 14249412061239312}
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +108,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 48
   m_CollisionDetection: 0
+--- !u!114 &14249412061239312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424010137415470236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6bf8d1c7485404592d232c01a53a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputName: Fire1
+  attackLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  attackAngle: 45
+  attackRange: 3
+  damageDelay: 0.5
+  attackCooldown: 0.5
+  attackDamage: 1
+  attackKnockback: 0
+  attackUpwardsKnockback: 0
+  hitFX: {fileID: 0}
+  animator: {fileID: 0}
+  attackTriggerParameterName: Attack
+  timer: 0
+  displayDebugInfo: 0
+  inputChoiceIndex: 2
 --- !u!1 &5435675857966367545
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +149,7 @@ GameObject:
   - component: {fileID: 8686509338046866267}
   - component: {fileID: 3428113698258324439}
   - component: {fileID: 9166519361923190541}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
